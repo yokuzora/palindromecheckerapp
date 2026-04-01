@@ -1,0 +1,20 @@
+import java.util.*;
+public class PalindromeCheckerApp {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Input text : ");
+        String input = sc.nextLine();
+        int i = 0 ;
+        boolean status = true;
+        int j = input.length() -1;
+        for(int k = 0 ; k < input.length()/2 ; k++){
+            if(input.charAt(i)!= input.charAt(j)){
+                status = false;
+            }
+        }
+
+        System.out.println("Is palindrome ? " + status);
+
+    }
+}
